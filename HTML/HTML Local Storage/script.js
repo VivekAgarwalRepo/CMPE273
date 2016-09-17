@@ -1,5 +1,9 @@
 /**
- * 
+ * Using HTML5, create a local storage that stores following information regarding your university.
+Name,
+Year,
+Motto,
+President. 
  */
 
 var count=1;
