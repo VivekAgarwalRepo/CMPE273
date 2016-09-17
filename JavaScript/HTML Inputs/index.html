@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+<form name="Sign-up" method="post" action="success.html" >
+<input type="text" name="user-name" id="user-name" placeholder="First Name" autofocus required> *
+
+<input type="text" name="last-name" id="last-name" placeholder="Last Name" required> *
+<br><br>
+<input type="text" name="Set-User-Id" id="uid" pattern="[a-zA-Z]{3}[0-9]" placeholder="Set-User-Id" title="Three letters followed by Single digit." required> *
+<br>
+<br>
+<input type="password" name="password" pattern="[a-z]*[A-Z]+[a-z]*[0-9]" placeholder="Create new password" title="Include at-least one Uppercase letter and only end with a single digit" required> *
+<br><br>
+<label>E-mail address :</label><input type="email"  placeholder="Enter Email" title="Please enter email address for a .com domain" required>*
+<br>
+<br>
+<label>How did you hear about us?
+ <select name="about-us">
+            <option value="News">News</option>
+            <option value="Friends" selected>Friends</option>
+            <option value="Internet" >Internet</option>
+            <option value="Other" >Other</option>
+            </select>
+<br><br>
+If other, please specify:
+  <input type="text" name="fruit" list="fruits">
+</label>
+
+<br><br>
+<input type="submit" id="submit" value="Submit" >
+</form>
+</body>
+</html>

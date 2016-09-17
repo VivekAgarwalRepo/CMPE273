@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<script type="text/javascript" src="script.js">
+</script>
+
+</head>
+<body>
+
+<form name="TravelOptions">
+<input type="text" name="From" placeholder="From"><br><br>
+<input type="text" name="To" placeholder="To"><br><br>
+<input type="number" name="miles" placeholder="Distance in miles" required> *<br><br>
+<input type="number" name="total" placeholder="Number of passengers" required> *<br><br>
+<input type="date" name="date" placeholder="Date of travel"><br><br>
+<select name="Travel">
+            <option value="Highway">Via Highway</option>
+            <option value="Flight" selected>Via Flight</option>
+            <option value="Sea" >Via Sea</option>
+</select>
+<br><br>
+<input type="button" value="Submit" id="submit" onclick="calculate()">
+<br><br>
+
+<div id="price" >	</div>
+
+</form>
+         
+            
+
+</body>
+</html>
