@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript" src="script.js">
+
+/*
+ * 
+ */
+
+//    document.write ("Sorry, your browser does not support Web Storage...");
+
+
+</script>
+
+</head>
+<body>
+<h1> Store your university information in our local storage </h1>
+
+<form name="university">
+
+<label>University Name :</label><input type="text" name="uni"><br><br>
+<label>Founding Year :</label><input type="number" name="year"><br><br>
+<label>Motto :</label><input type="text" name="motto"><br><br>
+<label>President Name :</label><input type="text" name="pres"><br><br>
+<input type="button" id="submit" value="Submit" onclick="add_to_local()"><br><br>
+</form>
+
+<input type="button" id="clear" value="Clear Local Storage" onclick="clearData()">
+
+<input type="button" id="display" value="Display Storage" onclick="display()">
+
+<div id="msg"></div>
+<div id="un"></div>
+<div id="fy"></div>
+<div id="mt"></div>
+<div id="pn"></div>
+
+</body>
+</html>
