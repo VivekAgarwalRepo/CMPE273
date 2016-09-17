@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script>
+/**
+ * Javascript can often silently ignore errors which makes debugging difficut for programmers. Using strict-mode demonstrate how errors
+ * can be displayed in Javascript.
+ */
+function without_Strict(){
+	 	 
+try{
+	x = +document.getElementById("numb1").value;
+	y= +document.getElementById("numb2").value;
+	z=x+y;
+	document.write("The answer using undefined variables is : "+z);
+}
+//console.log(x=3.14)
+
+
+catch(err)
+{
+	document.write("Error encountered as :"+err);//No error will be raised as this is not a strict mode.
+}
+
+ }
+ 
+ function with_Strict(){
+	 "use strict";
+	 try{
+		 x = +document.getElementById("numb1").value;
+		 y= +document.getElementById("numb2").value;
+			var z=x+y;
+			document.write("The answer using undefined variables is : "+z);
+	 }
+	 
+	 catch(err){
+		 document.write("Error encountered as :<br>"+err);
+	 }
+	 
+ }
+ 
+</script>
+</head>
+<body>
+
+Enter first number : <input type="number" id="numb1"><br><br>
+Enter second number :<input type="number" id="numb2"><br><br>
+
+<input type="button" onclick="without_Strict()" value="Add Without strict mode" >
+
+<input type="button" onclick="with_Strict()" value="Add With strict mode" >
+
+
+
+</body>
+</html>
