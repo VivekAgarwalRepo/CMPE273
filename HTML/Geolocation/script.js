@@ -1,5 +1,5 @@
 /**
- * 
+ * Bear Grills like to go mountain trekking all by himself as an adventure. He also carries a map of the area in case he is lost. However, he needs his current co-ordinates to figure out an exit path on the map he is carrying. Using HTML5 Geolocation API display his current location coordinates so that he can reach home safely.
  */
 function get_location(){
 	
